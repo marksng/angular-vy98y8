@@ -5,15 +5,13 @@
     <a [title]="product.name + ' details'">
       {{product.name}}
     </a>
+    <button type="button" (click)="share()">
+      Share
+    </button>
   </h3>
   <p *ngIf="product.description">
     Description: {{product.description}}
   </p>
-
-  <button type="button" (click)="share()">
-    Share
-  </button>
-
 </div>
 
 
